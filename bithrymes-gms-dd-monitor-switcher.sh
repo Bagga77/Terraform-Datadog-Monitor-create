@@ -28,6 +28,8 @@ test=$(date '+%s')
 #Unix Timestamp after 15 minutes
 timestamp=$((test + 950))
 
+rm -rf terraform.tfstate terraform.tfstate.backup
+
 #initialise Terraform
 terraform init
 
